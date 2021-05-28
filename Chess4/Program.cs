@@ -20,6 +20,7 @@ namespace Chess4
 
             Rook rook = new Rook(x1, y1);
             Console.WriteLine(rook.IsRightMove(x1, y1));
+            //
 
             Bishop bishop = new Bishop(x1, y1);
             Console.WriteLine(bishop.IsRightMove(x1, y1));
