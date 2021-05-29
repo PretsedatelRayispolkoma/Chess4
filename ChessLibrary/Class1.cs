@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ChessLibrary
-{
-    class PieceMaker
+{ 
+    public class PieceMaker
     {
         static public Figure Make(string pieceCode, int x, int y)
         {
-            Figure figure= null;
+            Figure figure = null;
 
             switch (pieceCode)
             {
@@ -22,7 +22,7 @@ namespace ChessLibrary
                 case "Bishop":
                 case "B":
                     figure = new Bishop(x, y);
-                    break;
+                break;
 
                 case "Rook":
                 case "R":
@@ -41,7 +41,6 @@ namespace ChessLibrary
 
                 default: throw (new Exception("Unknown figure"));
             }
-
             return figure;
         }
 
@@ -68,7 +67,7 @@ namespace ChessLibrary
         }
     }
 
-    class King : Figure
+    public class King : Figure
     {
         public King(int X, int Y) : base(X, Y)
         {}
@@ -79,7 +78,7 @@ namespace ChessLibrary
         }
     }
 
-    class Bishop : Figure
+    public class Bishop : Figure
     {
         public Bishop(int X, int Y) : base(X, Y)
         {}
@@ -90,7 +89,7 @@ namespace ChessLibrary
         }
     }
 
-    class Rook : Figure
+    public class Rook : Figure
     {
         public Rook(int X, int Y) : base(X, Y)
         {}
@@ -101,7 +100,7 @@ namespace ChessLibrary
         }
     }
 
-    class Queen : Figure
+    public class Queen : Figure
     {
         public Queen(int X, int Y) : base(X, Y)
         {}
@@ -112,7 +111,7 @@ namespace ChessLibrary
         }
     }
 
-    class Knight : Figure
+    public class Knight : Figure
     {
         public Knight(int X, int Y) : base(X, Y)
         {}
