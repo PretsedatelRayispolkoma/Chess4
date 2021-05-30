@@ -15,27 +15,37 @@ namespace ChessLibrary
             switch (pieceCode)
             {
                 case "King":
+                case "king":
                 case "K":
+                case "k":
                     figure = new King(x, y);
                     break;
 
                 case "Bishop":
+                case "bishop":
                 case "B":
+                case "b":
                     figure = new Bishop(x, y);
                 break;
 
                 case "Rook":
+                case "rook":
                 case "R":
+                case "r":
                     figure = new Rook(x, y);
                     break;
 
                 case "Queen":
+                case "queen":
                 case "Q":
+                case "q":
                     figure = new Queen(x, y);
                     break;
 
                 case "Knight":
+                case "knight":
                 case "N":
+                case "n":
                     figure = new Knight(x, y);
                     break;
 
